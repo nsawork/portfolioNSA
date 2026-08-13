@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nicolas Sá — Portfólio
 
-## Getting Started
+Portfólio pessoal desenvolvido para apresentar meus projetos, experiências, habilidades e tecnologias utilizadas no desenvolvimento de software.
 
-First, run the development server:
+🚀 **Acesse o portfólio:** https://nsawork.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Sobre o projeto
+
+Este projeto foi desenvolvido como meu portfólio profissional, reunindo projetos acadêmicos e pessoais nas áreas de desenvolvimento Full Stack, automação, inteligência artificial, dados e desenvolvimento web.
+
+O objetivo é apresentar de forma organizada minha experiência prática, tecnologias que utilizo e projetos que desenvolvi ao longo da minha formação.
+
+---
+
+## Tecnologias
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **JavaScript**
+* **HTML & CSS**
+* **Git & GitHub**
+* **Vercel**
+
+Além dessas tecnologias, o portfólio apresenta projetos desenvolvidos utilizando diferentes ferramentas e tecnologias, como:
+
+* Python
+* Java
+* Spring Boot
+* Node.js
+* Express
+* MongoDB
+* PostgreSQL
+* Supabase
+* Power BI
+* OpenAI API
+* Selenium
+* PyAutoGUI
+
+---
+
+## Funcionalidades
+
+* Apresentação profissional
+* Página de experiências
+* Portfólio de projetos
+* Páginas individuais para cada projeto
+* Tecnologias e ferramentas utilizadas
+* Links para repositórios e projetos
+* Seção de contato
+* Interface responsiva
+* Animações e componentes interativos
+* Navegação entre diferentes seções do portfólio
+
+---
+
+## Estrutura do projeto
+
+```text
+app/
+├── about/
+├── contact/
+├── experience/
+├── projects/
+├── tools/
+├── components/
+├── favicon.ico
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+lib/
+├── projects-data.ts
+└── utils.ts
+
+public/
+├── images
+├── videos
+└── certificates
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto está hospedado na **Vercel** e conectado ao repositório do GitHub.
 
-## Learn More
+Cada novo `push` para a branch `main` gera automaticamente um novo deploy.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Nicolas Sá**
 
-## Deploy on Vercel
+Full Stack Developer | Python • IA • Dados • Automação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub: [@nsawork](https://github.com/nsawork)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Licença
+
+Este projeto é um portfólio pessoal. O código pode ser consultado para fins de estudo e referência, mas os conteúdos, imagens, vídeos e materiais apresentados não devem ser reutilizados sem autorização.
