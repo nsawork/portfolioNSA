@@ -1,5 +1,9 @@
 # Nicolas Sá — Portfólio
 
+![Preview do portfólio](public/capturatela.png)
+
+Portfólio pessoal desenvolvido para apresentar meus projetos, experiências, habilidades e tecnologias utilizadas no desenvolvimento de software.
+
 Portfólio pessoal desenvolvido para apresentar meus projetos, experiências, habilidades e tecnologias utilizadas no desenvolvimento de software.
 
 🚀 **Acesse o portfólio:** https://nsawork.vercel.app/
