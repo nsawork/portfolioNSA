@@ -30,7 +30,78 @@ export interface Project {
  */
 export const projects: Project[] = [
   {
-    id: "1",
+  id: "1",
+
+  title: "Website Fotógrafo",
+
+  video: "/videos/sasurfvideo.mp4",
+
+  slug: "sa-surf",
+
+  description:
+    "Site profissional desenvolvido para apresentar trabalhos de fotografia e produção audiovisual aérea voltados ao surf, esportes, marcas e projetos comerciais.",
+
+  detailedDescription:
+    "Projeto autoral desenvolvido para a Sá.Surf, marca dedicada à produção audiovisual e captação aérea com drone. O site foi criado para apresentar trabalhos, serviços e projetos de forma visual e profissional, com foco em surf, esportes, lifestyle, eventos, imóveis e produções comerciais. A experiência combina vídeos, fotografias, animações e navegação responsiva para valorizar o conteúdo audiovisual e facilitar o contato com potenciais clientes.",
+
+  image: "/sasurfimage.png",
+
+  tags: [
+    "Frontend",
+    "React",
+    "TypeScript",
+    "Vite",
+    "Framer Motion",
+    "Lenis",
+    "Drone",
+    "Audiovisual",
+  ],
+
+  status: "online",
+
+  techStack: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Framer Motion",
+    "Lenis",
+    "CSS",
+    "Design Responsivo",
+    "Vercel",
+  ],
+
+  features: [
+    "Portfólio visual de produções audiovisuais",
+    "Apresentação de serviços de captação aérea",
+    "Galeria de projetos com fotografias e vídeos",
+    "Experiência responsiva para diferentes dispositivos",
+    "Animações e transições utilizando Framer Motion",
+    "Rolagem suave com Lenis",
+    "Integração com Instagram e WhatsApp",
+    "Apresentação de projetos comerciais e esportivos",
+  ],
+
+  learningOutcomes: [
+    "Desenvolvimento de interfaces modernas com React e TypeScript",
+    "Criação de experiências visuais para projetos audiovisuais",
+    "Implementação de animações e transições com Framer Motion",
+    "Utilização de Lenis para navegação e rolagem suave",
+    "Otimização de conteúdo visual para diferentes dispositivos",
+    "Publicação e deploy de aplicações utilizando Vercel",
+    "Desenvolvimento de um projeto autoral para apresentação profissional",
+  ],
+
+  links: {
+    visit: "https://sa-surf.vercel.app",
+    github: "https://github.com/nsawork/sa-surf",
+  },
+
+  author: "Sá.Surf",
+
+  authorAvatar: "/Hexagonal.png",
+},
+  {
+    id: "2",
     title: "Painel Controle Financeiro",
     video: "/videos/mycash.mp4",
     slug: "painel-controle-financeiro",
@@ -72,7 +143,7 @@ export const projects: Project[] = [
     authorAvatar: "/Hexagonal.png",
   },
   {
-    id: "2",
+    id: "3",
     title: "Portfólio Profissional",
     video: "/videos/byliliv.mp4",
     slug: "portfolio-byliliv",
@@ -115,7 +186,7 @@ export const projects: Project[] = [
     authorAvatar: "/Hexagonal.png",
   },
   {
-    id: "3",
+    id: "4",
     title: "Bot de Previsão de Ondas WhatsApp",
     video: "/videos/whatsvideo.mp4",
     slug: "bot-previsao-onda",
@@ -157,7 +228,7 @@ export const projects: Project[] = [
     authorAvatar: "/Hexagonal.png",
   },
   {
-    id: "4",
+    id: "5",
     title: "Scanner de Segurança Web",
     video: "/videos/scannervideo.mp4",
     slug: "web-security-scanner",
@@ -194,7 +265,7 @@ export const projects: Project[] = [
     authorAvatar: "/Hexagonal.png",
   },
   {
-    id: "5",
+    id: "6",
     title: "Controle de Estoque",
     video: "/videos/controleEstoque.mp4",
     slug: "controle-de-estoque",
@@ -231,7 +302,7 @@ export const projects: Project[] = [
     authorAvatar: "/Hexagonal.png",
   },
   {
-    id: "6",
+    id: "7",
     title: "Automação de Cadastro de Produtos",
     video: "/videos/cadastro.mp4",
     slug: "automacao-cadastro-produtos",

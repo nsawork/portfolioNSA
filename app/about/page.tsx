@@ -1,19 +1,15 @@
 import Link from "next/link";
 import { aboutPageStyles, commonStyles, styles } from "@/public/dummyStyles";
 import { BackgroundBeamsWithCollision } from "../components/ui/background-beams-with-collision";
-import { Instagram } from "lucide-react";
 
 export default function AboutPage() {
   const interests = [
     "DESENVOLVEDOR FULL STACK",
-    "PYTHON",
-    "REACT",
-    "AUTOMAÇÃO",
-    "NODE.JS",
+    "FOTOGRAFO",
     "IA",
     "VIAGENS",
     "ATLETA",
-    "INGLÊS EM DESENVOLVIMENTO",
+    "INGLÊS B1 EM DESENVOLVIMENTO",
   ];
 
   const techStack = [
@@ -31,6 +27,12 @@ export default function AboutPage() {
     "OpenAI API",
     "JWT",
     "Git",
+    "Github",
+    "Vite",
+    "CSS avançado",
+    "Tailwind CSS",
+    "Lenis",
+    "Vercel",
   ];
 
   const email = "niko_asb@hotmail.com";
@@ -88,26 +90,31 @@ export default function AboutPage() {
                   O que eu faço
                 </h2>
                 <p className={aboutPageStyles.paragraph}>
-                  Desenvolvo aplicações Full Stack, APIs REST, automações em
-                  Python e sistemas web utilizando React, Next.js, Node.js,
-                  Express, Flask e bancos de dados SQL e NoSQL. Também
-                  desenvolvo integrações entre serviços, soluções com IA e
-                  ferramentas voltadas para produtividade e automação de
-                  processos.
+                  Desenvolvo aplicações web e soluções Full Stack, criando
+                  interfaces, APIs REST, integrações entre serviços e sistemas
+                  conectados a bancos de dados relacionais e não relacionais.
+                  Trabalho com tecnologias como React, Next.js, TypeScript,
+                  Node.js, Express, Python e Flask, aplicando esses
+                  conhecimentos em projetos próprios, automações e ferramentas
+                  voltadas à produtividade. Também exploro o uso de inteligência
+                  artificial em aplicações e fluxos automatizados, buscando
+                  integrar essas tecnologias a soluções digitais de maneira
+                  prática, eficiente e personalizada.
                 </p>
                 <p className={aboutPageStyles.paragraph}>
-                  Além da tecnologia, sou fundador da{" "}
+                  Além da tecnologia, sou fundador do{" "}
                   <a
-                    href="https://www.instagram.com/sa.surf/"
+                    href="https://sa-surf.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.instagramLink}
                   >
-                    <Instagram className={styles.instagramIcon} />
+                    
                     <span className={styles.instagramText}>@sa.surf</span>
                   </a>
-                  , marca voltada à produção audiovisual com drones para videos com IA,
-                  esportes, arquitetura, turismo e projetos comerciais.
+                  , marca voltada à produção audiovisual com drones para videos
+                  com IA, esportes, arquitetura, turismo e projetos comerciais,
+                  com um site que eu mesmo desenvolvi.
                 </p>
               </section>
 
