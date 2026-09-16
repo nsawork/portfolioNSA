@@ -95,14 +95,24 @@ export default function Homepage(): React.ReactElement {
               </p>
               <p className={homePageStyles.paragraph}>
                 {" "}
-                Desenvolvi projetos envolvendo aplicações Full Stack, APIs REST,
-                automações em Python, sistemas de gestão financeira,
-                autenticação com JWT, portfólios profissionais, interfaces web e
-                ferramentas para análise de segurança de aplicações. Também
-                desenvolvo soluções voltadas para automação de processos,
-                integração entre serviços e aumento de produtividade utilizando
-                Python, React, Node.js, Flask e outras tecnologias modernas.
-                </p>
+                Desenvolvo aplicações e soluções digitais que combinam
+                desenvolvimento Full Stack, automação e inteligência artificial
+                para transformar necessidades reais em produtos funcionais. Ao
+                longo dos meus projetos, criei aplicações web, APIs REST,
+                sistemas de gestão financeira, automações de processos,
+                portfólios profissionais e ferramentas voltadas à análise de
+                segurança.
+              </p>
+              <p className={homePageStyles.paragraph}>
+                {" "}
+                Minha experiência envolve desde a construção de interfaces e
+                experiências digitais até o desenvolvimento de backends,
+                integrações entre serviços, autenticação e gerenciamento de
+                dados. Trabalho principalmente com React, Next.js, TypeScript,
+                Node.js, Python, Flask e outras tecnologias modernas, sempre
+                buscando unir tecnologia, criatividade , inteligência artificial
+                e eficiência na construção de soluções.
+              </p>
               <p className={homePageStyles.paragraph}>
                 {" "}
                 Algumas Disponíveis em meu{" "}
@@ -131,7 +141,7 @@ export default function Homepage(): React.ReactElement {
                     disableRemotePlayback
                     style={homePageStyles.article.videoStyles}
                   >
-                    <source src="/videos/mycash.mp4" type="video/mp4" />
+                    <source src="/videos/sasurfvideo.mp4" type="video/mp4" />
                     Seu navegador não suporta a tag de vídeo.
                   </video>
                 </div>
