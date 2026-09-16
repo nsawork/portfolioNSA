@@ -44,7 +44,7 @@ export const projects: Project[] = [
   detailedDescription:
     "Projeto autoral desenvolvido para a Sá.Surf, marca dedicada à produção audiovisual e captação aérea com drone. O site foi criado para apresentar trabalhos, serviços e projetos de forma visual e profissional, com foco em surf, esportes, lifestyle, eventos, imóveis e produções comerciais. A experiência combina vídeos, fotografias, animações e navegação responsiva para valorizar o conteúdo audiovisual e facilitar o contato com potenciais clientes.",
 
-  image: "/sasurfimage.png",
+  image: "/sasurfimage.PNG",
 
   tags: [
     "Frontend",
