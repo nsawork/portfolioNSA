@@ -537,112 +537,266 @@ export const projectDetailStyles = {
 };
 
 // Add these to assets/dummyStyles.js
-
 export const sidebarStyles = {
-  // Mobile top navbar
+  // =========================
+  // MOBILE TOP NAV
+  // =========================
+
   mobileTopNav:
-    "md:hidden fixed top-0 left-0 right-0 z-80 bg-transparent backdrop-blur-sm px-4 py-3",
-  mobileTopNavInner: "flex items-center justify-between",
-  mobileAvatarContainer: "flex items-center gap-3",
+    "md:hidden fixed top-0 left-0 right-0 z-[80] bg-zinc-950/80 backdrop-blur-md px-4 py-3",
+
+  mobileTopNavInner:
+    "flex items-center justify-between min-h-[40px]",
+
+  mobileAvatarContainer:
+    "flex items-center gap-3 min-w-0",
+
   mobileAvatar:
-    "w-10 h-10 rounded-full overflow-hidden ring-1 ring-white/10 shadow-sm",
-  mobileAvatarImage: "object-cover",
-  mobileName: "font-semibold text-zinc-100 text-base",
-  mobileTyping: "text-xs text-zinc-400 truncate max-w-[120px]",
+    "w-10 h-10 shrink-0 rounded-full overflow-hidden ring-1 ring-white/10 shadow-sm",
 
-  // Spacer for mobile
-  mobileSpacer: "md:hidden h-16",
+  mobileAvatarImage:
+    "object-cover",
 
-  // Desktop sidebar
+  mobileName:
+    "font-semibold text-zinc-100 text-base truncate",
+
+  mobileTyping:
+    "text-xs text-zinc-400 truncate max-w-[120px]",
+
+
+  // =========================
+  // MOBILE SPACER
+  // =========================
+
+  mobileSpacer:
+    "md:hidden h-[72px]",
+
+
+  // =========================
+  // DESKTOP SIDEBAR
+  // =========================
+
   desktopSidebar:
     "hidden md:flex flex-col w-[260px] h-screen px-6 py-8 bg-zinc-950 border-r border-zinc-800 fixed left-0 top-0 overflow-y-auto",
-  desktopAvatarContainer: "flex items-center gap-3 mb-6",
-  desktopAvatar:
-    "w-12 h-12 rounded-full overflow-hidden ring-1 ring-white/10 shadow-sm",
-  desktopAvatarImage: "object-cover",
-  desktopName: "font-semibold text-zinc-100",
-  desktopTyping: "text-xs text-zinc-400",
 
-  // Navigation
-  navContainer: "flex-1",
-  navList: "space-y-2",
+  desktopAvatarContainer:
+    "flex items-center gap-3 mb-6",
+
+  desktopAvatar:
+    "w-12 h-12 shrink-0 rounded-full overflow-hidden ring-1 ring-white/10 shadow-sm",
+
+  desktopAvatarImage:
+    "object-cover",
+
+  desktopName:
+    "font-semibold text-zinc-100",
+
+  desktopTyping:
+    "text-xs text-zinc-400",
+
+
+  // =========================
+  // DESKTOP NAVIGATION
+  // =========================
+
+  navContainer:
+    "flex-1 min-h-0",
+
+  navList:
+    "space-y-2",
+
   navItem:
     "flex items-center gap-3 px-3 py-3 rounded-lg transition-colors duration-150",
-  navItemActive: "bg-zinc-800 text-zinc-50",
-  navItemInactive: "text-zinc-200 hover:bg-zinc-800 hover:text-zinc-50",
-  navIcon: "w-4 h-4 text-zinc-300",
-  navLabel: "text-sm",
 
-  // Social section
-  connectLabel: "mt-8 text-xs text-zinc-500",
-  socialList: "mt-3 space-y-2 text-sm",
+  navItemActive:
+    "bg-zinc-800 text-zinc-50",
+
+  navItemInactive:
+    "text-zinc-200 hover:bg-zinc-800 hover:text-zinc-50",
+
+  navIcon:
+    "w-4 h-4 shrink-0 text-zinc-300",
+
+  navLabel:
+    "text-sm",
+
+
+  // =========================
+  // SOCIAL
+  // =========================
+
+  connectLabel:
+    "mt-8 text-xs text-zinc-500",
+
+  socialList:
+    "mt-3 space-y-2 text-sm",
+
   socialItem:
     "group flex items-center gap-2 text-zinc-300 hover:text-zinc-50 transition-colors",
-  socialIcon: "w-4 h-4",
-  socialLabel: "truncate",
 
-  // Footer
-  footerText: "mt-6 text-sm text-zinc-400",
+  socialIcon:
+    "w-4 h-4 shrink-0",
 
-  // Mobile menu overlay
-  mobileOverlay: "md:hidden fixed inset-0 z-[60] transition-all duration-300",
-  mobileOverlayVisible: "opacity-100",
-  mobileOverlayHidden: "opacity-0 pointer-events-none",
-  mobileOverlayBg: "absolute inset-0 bg-black transition-opacity duration-300",
-  mobileOverlayBgVisible: "opacity-50",
-  mobileOverlayBgHidden: "opacity-0",
+  socialLabel:
+    "truncate",
 
-  // Mobile sidebar
+
+  // =========================
+  // DESKTOP FOOTER
+  // =========================
+
+  footerText:
+    "mt-6 text-sm text-zinc-400",
+
+
+  // =========================
+  // MOBILE MENU OVERLAY
+  // =========================
+
+  mobileOverlay:
+    "md:hidden fixed inset-0 z-[60] transition-all duration-300",
+
+  mobileOverlayVisible:
+    "opacity-100",
+
+  mobileOverlayHidden:
+    "opacity-0 pointer-events-none",
+
+  mobileOverlayBg:
+    "absolute inset-0 bg-black transition-opacity duration-300",
+
+  mobileOverlayBgVisible:
+    "opacity-50",
+
+  mobileOverlayBgHidden:
+    "opacity-0",
+
+
+  // =========================
+  // MOBILE SIDEBAR
+  // =========================
+
   mobileSidebar:
-    "mobile-sidebar absolute right-0 top-0 h-full w-full max-w-[320px] bg-zinc-950 border-l border-zinc-800 transform transition-transform duration-300 ease-out",
-  mobileSidebarVisible: "translate-x-0",
-  mobileSidebarHidden: "translate-x-full",
-  mobileSidebarHeader: "p-6 border-b border-zinc-800",
-  mobileHeaderInner: "flex items-center justify-between mb-0",
-  mobileHeaderAvatarContainer: "flex items-center gap-3",
-  mobileCloseButton: "p-2 rounded-lg hover:bg-zinc-800 transition-colors",
-  mobileCloseIcon: "w-5 h-5 text-zinc-400",
+    "mobile-sidebar absolute right-0 top-0 h-full w-full max-w-[320px] bg-zinc-950 border-l border-zinc-800 transform transition-transform duration-300 ease-out overflow-hidden",
 
-  // Mobile nav content
-  mobileContent: "p-6 overflow-y-auto h-[calc(100vh-240px)]",
-  mobileSectionLabel: "text-xs text-zinc-500 mb-3",
-  mobileNavList: "space-y-1",
+  mobileSidebarVisible:
+    "translate-x-0",
+
+  mobileSidebarHidden:
+    "translate-x-full",
+
+  mobileSidebarHeader:
+    "p-6 border-b border-zinc-800 shrink-0",
+
+  mobileHeaderInner:
+    "flex items-center justify-between mb-0",
+
+  mobileHeaderAvatarContainer:
+    "flex items-center gap-3 min-w-0",
+
+  mobileCloseButton:
+    "p-2 rounded-lg hover:bg-zinc-800 transition-colors shrink-0",
+
+  mobileCloseIcon:
+    "w-5 h-5 text-zinc-400",
+
+
+  // =========================
+  // MOBILE NAV CONTENT
+  // =========================
+
+  mobileContent:
+    "p-6 overflow-y-auto h-[calc(100vh-240px)] overscroll-contain",
+
+  mobileSectionLabel:
+    "text-xs text-zinc-500 mb-3",
+
+  mobileNavList:
+    "space-y-1",
+
   mobileNavItem:
     "flex items-center gap-3 px-3 py-3 rounded-lg transition-colors duration-150",
-  mobileNavIcon: "w-5 h-5 text-zinc-300",
-  mobileNavLabel: "text-sm font-medium",
 
-  // Mobile social section
-  mobileSocialSection: "mb-8",
-  mobileSocialList: "space-y-2",
+  mobileNavIcon:
+    "w-5 h-5 shrink-0 text-zinc-300",
+
+  mobileNavLabel:
+    "text-sm font-medium",
+
+
+  // =========================
+  // MOBILE SOCIAL
+  // =========================
+
+  mobileSocialSection:
+    "mb-8",
+
+  mobileSocialList:
+    "space-y-2",
+
   mobileSocialItem:
     "flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-300 hover:text-zinc-50 hover:bg-zinc-800 transition-colors",
-  mobileSocialIcon: "w-4 h-4",
-  mobileSocialText: "text-sm",
 
-  // Mobile footer
+  mobileSocialIcon:
+    "w-4 h-4 shrink-0",
+
+  mobileSocialText:
+    "text-sm",
+
+
+  // =========================
+  // MOBILE FOOTER
+  // =========================
+
   mobileFooter:
     "absolute bottom-0 left-0 right-0 p-6 border-t border-zinc-800 bg-zinc-950",
-  mobileFooterLabel: "text-sm text-zinc-400 mb-4",
-  mobileFooterText: "text-xs text-zinc-400 flex justify-between",
 
-  // Bottom navigation bar
-  bottomNav: "md:hidden fixed bottom-0 left-0 right-0 z-50",
-  bottomNavContainer: "mx-auto w-full px-4 pb-4",
-  bottomNavInner: "max-w-lg mx-auto",
+  mobileFooterLabel:
+    "text-sm text-zinc-400 mb-4",
+
+  mobileFooterText:
+    "text-xs text-zinc-400 flex justify-between",
+
+
+  // =========================
+  // BOTTOM NAVIGATION
+  // =========================
+
+  bottomNav:
+    "md:hidden fixed bottom-0 left-0 right-0 z-50 pointer-events-none",
+
+  bottomNavContainer:
+    "mx-auto w-full px-3 pb-[calc(12px+env(safe-area-inset-bottom))] pointer-events-auto",
+
+  bottomNavInner:
+    "max-w-lg mx-auto",
+
   bottomNavBar:
-    "bg-zinc-900/95 backdrop-blur-sm border border-zinc-800 px-2 py-2 flex items-center gap-2 shadow-2xl shadow-black/40 rounded-xl",
-  bottomNavGrid: "grid grid-cols-6 gap-1 flex-1",
+    "bg-zinc-900/95 backdrop-blur-md border border-zinc-800 px-2 py-2 flex items-center gap-2 shadow-2xl shadow-black/40 rounded-xl",
+
+  bottomNavGrid:
+    "grid grid-cols-6 gap-1 flex-1 min-w-0",
+
   bottomNavLink:
-    "p-2 rounded-lg transition-all duration-200 flex items-center justify-center",
-  bottomNavLinkActive: "text-zinc-50 bg-zinc-800",
+    "p-2.5 rounded-lg transition-all duration-200 flex items-center justify-center min-w-0",
+
+  bottomNavLinkActive:
+    "text-zinc-50 bg-zinc-800",
+
   bottomNavLinkInactive:
     "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50",
-  bottomNavIcon: "w-4 h-4",
-  bottomNavDivider: "h-6 w-px bg-zinc-800",
+
+  bottomNavIcon:
+    "w-4 h-4",
+
+  bottomNavDivider:
+    "h-6 w-px bg-zinc-800 shrink-0",
+
   bottomMenuButton:
-    "p-2 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 transition-colors",
-  bottomMenuIcon: "w-4 h-4",
+    "p-2.5 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 transition-colors shrink-0",
+
+  bottomMenuIcon:
+    "w-4 h-4",
 };
 export const commonStyles = {
   headerLabel:

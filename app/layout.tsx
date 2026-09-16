@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 
@@ -19,6 +21,11 @@ export const metadata: Metadata = {
   description: "Personal Portfolio",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,22 +33,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
-
-      <body className={`${geistSans.className} ${geistMono.className} bg-zinc-950 text-zinc-100 antialiased`}>
+      <body
+        className={`${geistSans.className} ${geistMono.className} bg-zinc-950 text-zinc-100 antialiased`}
+      >
         <div className="min-h-screen flex">
-          <Sidebar/>
-          <div className="flex-1 md:ml-65 ml-10px">
-            <main className="min-h-screen">
-               {children}
+          <Sidebar />
+
+          <div className="flex-1 md:ml-65 ml-0 min-w-0">
+            <main className="min-h-screen overflow-x-hidden">
+              {children}
             </main>
-            <Footer/>
+
+            <Footer />
           </div>
-          
         </div>
-       
-        
-        </body>
+      </body>
     </html>
   );
 }
