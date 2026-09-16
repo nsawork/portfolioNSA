@@ -482,7 +482,7 @@ export default function TimelineDemo() {
             </div>
             <div className={s.techCard}>
               <div className={`${s.techCardTitle} ${s.textBlue}`}>Deploy</div>
-              <div className={s.techCardContent}>Render, GitHub Pages, Netlify</div>
+              <div className={s.techCardContent}>Render, GitHub Pages, Netlify, Vercel</div>
             </div>
             <div className={s.techCard}>
               <div className={`${s.techCardTitle} ${s.textBlue}`}>
