@@ -33,6 +33,7 @@ export default function AboutPage() {
     "Tailwind CSS",
     "Lenis",
     "Vercel",
+    "Maestri",
   ];
 
   const email = "niko_asb@hotmail.com";

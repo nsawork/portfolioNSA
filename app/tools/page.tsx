@@ -28,6 +28,12 @@ const tools: Tool[] = [
   href: "https://claude.ai",
 },
 {
+  name: "Maestri",
+  category: "Inteligência Artificial",
+  icon: "/maestri.png",
+  href: "https://www.themaestri.app",
+},
+{
   name: "GitHub Copilot",
   category: "Inteligência Artificial",
   icon: "/copilot.webp.png",
