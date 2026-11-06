@@ -192,6 +192,8 @@ export default function ToolsPage() {
                           alt={`${tool.name} logo`}
                           width={56}
                           height={56}
+                          // Vercel's image optimizer rejects .jfif files
+                          unoptimized={tool.icon.endsWith(".jfif")}
                           className={toolsPageStyles.toolIcon}
                         />
                       </div>

@@ -5,6 +5,8 @@ export interface Project {
   detailedDescription: string;
   slug: string;
   image: string;
+  /** Tailwind object-position class for the card thumbnail (default: center) */
+  imagePosition?: string;
   video?: string;
   tags: string[];
   status: "online" | "local";
@@ -110,7 +112,7 @@ export const projects: Project[] = [
       "Aplicação Full Stack desenvolvida para controlar despesas e receitas de forma simples e intuitiva. O sistema permite fazer o cadastro e ter seu perfil para cadastrar transações, visualizar o histórico financeiro, organizar gastos por categoria e acompanhar o saldo em tempo real. O projeto foi desenvolvido com React no frontend, Node.js e Express no backend, utilizando MongoDB como banco de dados e autenticação JWT para proteger as informações dos usuários.",
     image: "/mycashimage.png",
     tags: ["FullStack", "SaaS", "MongoDB", "React", "Node.js"],
-    status: "online",
+    status: "local",
     techStack: [
       "React",
       "Node.js",
@@ -274,6 +276,7 @@ export const projects: Project[] = [
     detailedDescription:
       "Uma aplicação Full Stack desenvolvida com Python e Flask para gerenciamento de estoque. O sistema possui uma API REST com endpoints CRUD (GET, POST, PUT e DELETE), responsável pela criação, consulta, atualização e remoção de produtos. Os dados são armazenados utilizando SQLite e a aplicação conta com uma interface web simples para interação do usuário.",
     image: "/controleEstoque.png",
+    imagePosition: "object-left",
     tags: ["Python", "Flask", "SQLite", "API REST"],
     status: "local",
     techStack: ["Python", "Flask", "SQLite", "HTML", "CSS", "JSON", "API REST"],

@@ -70,7 +70,7 @@ function ProjectCard({ project }: { project: Project }) {
         <img
           src={project.image}
           alt={project.title}
-          className={s.projectImage}
+          className={`${s.projectImage} ${project.imagePosition ?? ""}`}
         ></img>
 
         <div className={s.statusBadgeContainer}>

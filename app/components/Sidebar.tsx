@@ -181,6 +181,15 @@ export default function Sidebar(): React.ReactElement {
     };
   }, [isMobileMenuOpen]);
 
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isMobileMenuOpen]);
+
   const navItems: {
     href: string;
     label: string;
@@ -363,7 +372,7 @@ export default function Sidebar(): React.ReactElement {
                   <TypingAnimation
                     className={s.mobileTyping}
                     words={[
-                      "Fotografo",
+                      "Fotógrafo",
                       "FullStack",
                       "Automações/IA",
                       "Serviços Digitais",
@@ -384,7 +393,7 @@ export default function Sidebar(): React.ReactElement {
           </div>
 
           <div className={s.mobileContent}>
-            <nav className="mb-8">
+            <nav className="mb-6">
               <div className={s.mobileSectionLabel}>Home</div>
               <ul className={s.mobileNavList}>
                 {navItems.map(({ href, label, Icon }) => (
@@ -395,7 +404,7 @@ export default function Sidebar(): React.ReactElement {
                       className={`${s.mobileNavItem} ${
                         pathname === href ? s.navItemActive : s.navItemInactive
                       }`}
-                      aria-label={pathname === href ? "page" : undefined}
+                      aria-current={pathname === href ? "page" : undefined}
                     >
                       <Icon className={s.mobileNavIcon} />
                       <span className={s.mobileNavLabel}>{label}</span>
@@ -431,7 +440,13 @@ export default function Sidebar(): React.ReactElement {
           </div>
 
           <div className={s.mobileFooter}>
-            <div className={s.mobileFooterLabel}>Entre em contato →</div>
+            <Link
+              href="/contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={s.mobileFooterLabel}
+            >
+              Entre em contato →
+            </Link>
 
             <div className={s.mobileFooterText}>
               <div>Made by Nicolas ® 2026</div>

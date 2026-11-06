@@ -654,7 +654,7 @@ export const sidebarStyles = {
   // =========================
 
   mobileOverlay:
-    "md:hidden fixed inset-0 z-[60] transition-all duration-300",
+    "md:hidden fixed inset-0 z-[90] transition-all duration-300",
 
   mobileOverlayVisible:
     "opacity-100",
@@ -677,7 +677,7 @@ export const sidebarStyles = {
   // =========================
 
   mobileSidebar:
-    "mobile-sidebar absolute right-0 top-0 h-full w-full max-w-[320px] bg-zinc-950 border-l border-zinc-800 transform transition-transform duration-300 ease-out overflow-hidden",
+    "mobile-sidebar absolute right-0 top-0 flex h-[100dvh] w-[85%] max-w-[320px] flex-col bg-zinc-950 border-l border-zinc-800 shadow-2xl shadow-black/60 transform transition-transform duration-300 ease-out overflow-hidden",
 
   mobileSidebarVisible:
     "translate-x-0",
@@ -686,7 +686,7 @@ export const sidebarStyles = {
     "translate-x-full",
 
   mobileSidebarHeader:
-    "p-6 border-b border-zinc-800 shrink-0",
+    "px-5 pb-4 pt-[calc(16px+env(safe-area-inset-top))] border-b border-zinc-800 shrink-0",
 
   mobileHeaderInner:
     "flex items-center justify-between mb-0",
@@ -706,10 +706,10 @@ export const sidebarStyles = {
   // =========================
 
   mobileContent:
-    "p-6 overflow-y-auto h-[calc(100vh-240px)] overscroll-contain",
+    "flex-1 min-h-0 px-5 py-5 overflow-y-auto overscroll-contain",
 
   mobileSectionLabel:
-    "text-xs text-zinc-500 mb-3",
+    "px-3 text-[11px] uppercase tracking-wider text-zinc-500 mb-2",
 
   mobileNavList:
     "space-y-1",
@@ -729,10 +729,10 @@ export const sidebarStyles = {
   // =========================
 
   mobileSocialSection:
-    "mb-8",
+    "mb-2",
 
   mobileSocialList:
-    "space-y-2",
+    "space-y-1",
 
   mobileSocialItem:
     "flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-300 hover:text-zinc-50 hover:bg-zinc-800 transition-colors",
@@ -749,10 +749,10 @@ export const sidebarStyles = {
   // =========================
 
   mobileFooter:
-    "absolute bottom-0 left-0 right-0 p-6 border-t border-zinc-800 bg-zinc-950",
+    "shrink-0 px-5 pt-4 pb-[calc(16px+env(safe-area-inset-bottom))] border-t border-zinc-800 bg-zinc-950",
 
   mobileFooterLabel:
-    "text-sm text-zinc-400 mb-4",
+    "block text-sm text-zinc-300 hover:text-zinc-50 transition-colors mb-2",
 
   mobileFooterText:
     "text-xs text-zinc-400 flex justify-between",
